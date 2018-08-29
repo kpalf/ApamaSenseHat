@@ -1,6 +1,4 @@
-Copyright \(c\) 2018 Kevin Palfreyman
-
-#Apama SenseHat HelloWorld Python Plugin
+# Apama SenseHat HelloWorld Python Plugin
 
 This is a simple example showing that it is possible to drive a Raspberry Pi SenseHAT device from Apama EPL running in a Correlator process with a Python plugin for EPL.
 
@@ -62,9 +60,9 @@ This is what I did, by taking hints from various other articles and search resul
 Lets start with the basics, as decribed at [the main documentation site](https://www.raspberrypi.org/documentation/hardware/sense-hat/).
 First, I checked that the default SenseHAT drivers were installed:
 ```
-	sudo apt-get update
-	sudo apt-get install sense-hat
-    sudo reboot
+sudo apt-get update
+sudo apt-get install sense-hat
+sudo reboot
 ```
 There are samples in `/usr/src/sense-hat/examples`, but for my purpose I simply created a file called `sensehat_helloworld.py` with the following content:
 ```python
@@ -125,3 +123,7 @@ correlator --config epl/config/CorrelatorConfig.yaml
 ```
 engine_inject epl/monitorscript/SenseHat_HelloWorldPlugin.mon
 ```
+
+---
+Copyright \(c\) 2018 Kevin Palfreyman
+
