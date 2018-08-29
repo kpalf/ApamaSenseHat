@@ -1,0 +1,19 @@
+/**
+ * A simple EPL application to call a python plugin to drive the RaspberryPi GPIO SenseHat.
+ *
+ * Copyright (c) 2018 Kevin Palfreyman 
+ */
+ 
+package kpalf.apama.sensehatplugin;
+
+monitor SenseHat_HelloWorldMonitor {
+
+	import "SenseHat_HelloWorldPlugin" as sensehat;
+
+	action onload() {
+		sensehat.show_message("Hello Apama!");
+	}
+
+}
+
+
