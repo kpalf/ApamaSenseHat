@@ -8,6 +8,7 @@ This is a simple example showing that it is possible to drive a Raspberry Pi Sen
 * Raspberry Pi version 3, Model B.  \(Untested but should also work with a v2, or v3+, but will NOT work with a v1 or a Zero or ZeroW.  Apama needs at least ARMv7hf\)
 * SenseHAT
 * Usual misc power, networking, cables
+* For the Sense Hat install 'I2C' should be enabled in the 'interfaces' section of raspi-config. ( sudo raspi-config - option 5 then P5 )
 
 **Software**
 * [Apama Core Community Edition](http://apamacommunity.com) v10.3.0 \(Oct 2018 release\), or later, for Linux on ARM 
@@ -121,7 +122,7 @@ correlator --config epl/config/CorrelatorConfig.yaml
 
 * In a second apama shell, use the `engine_inject` command to inject the EPL file into the running correlator.  It will execute immediately and invoke the python plugin to show the message on the SenseHAT.
 ```
-engine_inject epl/monitorscript/SenseHat_HelloWorldPlugin.mon
+engine_inject epl/monitors/SenseHat_HelloWorldPlugin.mon
 ```
 
 ---
