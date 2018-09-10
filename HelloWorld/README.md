@@ -122,7 +122,7 @@ correlator --config epl/config/CorrelatorConfig.yaml
 
 * In a second apama shell, use the `engine_inject` command to inject the EPL file into the running correlator.  It will execute immediately and invoke the python plugin to show the message on the SenseHAT.
 ```
-engine_inject epl/monitorscript/SenseHat_HelloWorldPlugin.mon
+engine_inject epl/monitors/SenseHat_HelloWorldPlugin.mon
 ```
 
 ---
